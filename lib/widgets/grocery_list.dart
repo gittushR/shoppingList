@@ -25,12 +25,6 @@ class _GroceryListState extends State<GroceryList> {
     });
   }
 
-  void _removeItem(GroceryItem item) {
-    setState(() {
-      _groceryItems.remove(item);
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     Widget groceryList = ListView.builder(
